@@ -1,9 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <sstream>
 #include <fstream>
-#include <stdlib.h>
+
 struct Person{
 private:
     std::string name;
