@@ -1,0 +1,6 @@
+create filename
+insert filename name : Mike age : 23
+read filename where name : Mike
+update filename name : John where name : Mike
+delete filename where name : John
+drop filename
