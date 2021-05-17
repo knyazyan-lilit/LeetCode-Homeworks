@@ -1,0 +1,6 @@
+create Person
+insert Person name : Mike age : 23
+read Person where name : Mike
+update Person name : John where name : Mike
+delete Person where name : John
+drop Person
