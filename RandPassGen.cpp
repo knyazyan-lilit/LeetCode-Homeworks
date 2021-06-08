@@ -1,12 +1,9 @@
 #include <iostream>
 #include<string>
-#include <vector>
-
 
 int random_index_generator(){
 
     int r = rand() % 4;
-
     return r;
 }
 
@@ -17,7 +14,6 @@ int alphabet_index_generator(){
 }
 
 std::string PasswordGenerator(){
-   
    
     int i=0;
     std::string Uppercase;
@@ -61,16 +57,12 @@ std::string PasswordGenerator(){
     
     
     std::string password;
-
     int length = 8 + (rand()%(24 - 8 + 1)) ;
-   
     int count_of_elems=0;
     int count_of_uppercases = 0;
     int count_of_lowercases = 0;
     int count_of_symbols = 0;
 
-
-    
     while(count_of_elems  < length){
         int ind = random_index_generator();
        if(ind == 3 && count_of_symbols==2){
@@ -88,8 +80,6 @@ std::string PasswordGenerator(){
             
             
         }
-
-
 
          if(ind == 1){
             if ((count_of_lowercases== 2) && ( count_of_uppercases == 0 || count_of_uppercases == 1 || count_of_symbols == 0 || count_of_symbols==1)){
@@ -111,7 +101,6 @@ std::string PasswordGenerator(){
             count_of_elems++;
             
         }
-
 
 
        if(ind == 3){
@@ -136,7 +125,6 @@ std::string PasswordGenerator(){
 int main(){
     srand (time(0));
     std::string str = PasswordGenerator();
-    
     std::cout<<str;
     return 0;
 }
