@@ -134,7 +134,7 @@ std::string PasswordGenerator(){
             password = password + Symbols[symbols];
             count_of_symbols++;
             count_of_elems++;
-            std::cout<<count_of_symbols<<std::endl;
+            
             
         }
     
