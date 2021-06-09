@@ -4,7 +4,6 @@
 int random_index_generator(){
 
     int r = rand() % 4;
-   // std::cout<<r<<std::endl;
     return r;
 }
 
@@ -63,9 +62,6 @@ std::string PasswordGenerator(){
     int count_of_uppercases = 0;
     int count_of_lowercases = 0;
     int count_of_symbols = 0;
-
-
-
     password.resize(length);
     
 
@@ -97,7 +93,7 @@ std::string PasswordGenerator(){
             count_of_symbols++;
             count_of_elems++;
         }
-//
+    //
         if(ind == 0){
             if ((count_of_uppercases == 2) && ( count_of_lowercases == 0 || count_of_lowercases == 1 || count_of_symbols == 0 ||count_of_symbols==1)){
             continue;
