@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 unsigned long long max(unsigned long long a,unsigned long long b,unsigned long long c){
     if(a > b ){
         if(a > c){
@@ -15,11 +14,7 @@ unsigned long long max(unsigned long long a,unsigned long long b,unsigned long l
         return b;
     }
    return a;
-   
-    
 }
-
-
 
 int main(){
     long int matrix[20][20]={8, 2, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 8,
@@ -43,12 +38,10 @@ int main(){
 20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54,
 1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43 ,52 ,1, 89, 19, 67, 48};
 
-
 unsigned long long max_mul = 0;
 unsigned long long global_max_row = 0;
 //max of lines
     for(int i = 0;i < 20; ++i){
-        
         for(int j = 0;j < 20;++j){
             unsigned long long mul = 1;
             for(int k=0 ; k < 4;++k){
@@ -58,20 +51,15 @@ unsigned long long global_max_row = 0;
                 max_mul = mul;
             }
         }
-        
         if(global_max_row <= max_mul){
             global_max_row = max_mul;
         }
     }
 
-
 //max for columns
-
 unsigned long long max_mul1 = 0;
 unsigned long long global_max_col = 0;
-
       for(int j = 0;j < 20; ++j){
-        
         for(int i = 0;i < 20;++i){
             unsigned long long mul = 1;
             for(int k=0 ; k < 4;++k){
@@ -81,18 +69,14 @@ unsigned long long global_max_col = 0;
                 max_mul1 = mul;
             }
         }
-        
         if(global_max_col <= max_mul1){
             global_max_col = max_mul1;
         }
     }
-
 //max for diagonal
-
 unsigned long long max_mul2 = 0;
 unsigned long long global_max_dia = 0;
-
-
+    
 for( int t = 0; t<40; ++t){
     for( int i=t, j=0; i>=0 ; --i, ++j){
        if( (i<20) && (j<20) ){
@@ -103,16 +87,12 @@ for( int t = 0; t<40; ++t){
            if(max_mul1 <= mul){
                 max_mul1 = mul;
             }
-
         }
     }
     if(global_max_dia <= max_mul1){
         global_max_dia = max_mul1;
     }
-  
 }
-
- //unsigned long max = global_max_col > global_max_row ? global_max_col : global_max_row;
     std::cout<<max(global_max_row,global_max_col,global_max_dia);
     return 0;
 }
