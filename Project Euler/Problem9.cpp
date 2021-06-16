@@ -11,7 +11,6 @@ int main(){
                 mul = a*b*c;
                 break;
             }
-            
         }
      }
     std::cout<<mul;
