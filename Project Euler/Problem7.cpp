@@ -1,4 +1,5 @@
 #include <iostream>
+
 bool isPrime(int i){
     if(i<=1){
         return false;
@@ -15,10 +16,8 @@ int main(){
     int i=1;
     int counter=0;
     while(counter<6){
-        
         if(isPrime(i)){
             ++counter;
-          
         }
           ++i;
     }
