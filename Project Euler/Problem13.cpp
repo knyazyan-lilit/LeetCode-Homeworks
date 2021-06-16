@@ -3,22 +3,17 @@
 #include <fstream>
 
 int main(){ 
-  
-    std::fstream f;
-    //file.txt contains the numbers
-
-    f.open("./file.txt");
+     std::fstream f;
+     f.open("./file.txt");
      double sum = 0;
      double num;
      int i=0;
-    while(!f.eof()){
+     while(!f.eof()){
         f>>num;
         sum+=num;
         ++i;
-        
     }
-    f.close();
+   f.close();
    std::cout<<sum;
-
-    return 0;
+   return 0;
 }
