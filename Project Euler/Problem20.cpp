@@ -1,11 +1,9 @@
 #include <iostream>
 #include <string>
 
-
 double factorial(double x) {
  	double temp;
 	if (x <= 1) return 1;
-	
 	temp = x * factorial(x - 1);
 	return temp;
 }
