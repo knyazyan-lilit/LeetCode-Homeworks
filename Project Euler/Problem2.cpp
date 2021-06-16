@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 int main(){
     int sum = 0;
     int before_prev = 0;
