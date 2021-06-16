@@ -12,7 +12,6 @@ int reverse(int num){
     return reversed;
 }
 
-
 bool is_palondrome(int num){
     if(num == reverse(num)){
         return true;
@@ -26,10 +25,9 @@ int main(){
         for(int j = 100;j<1000;++j){
             if(is_palondrome(i*j)){
                 max = (i*j >= max) ? i*j : max;
-                
             }
         }
     }
     std::cout<<max;
-    
+    retrun 0;
 }
