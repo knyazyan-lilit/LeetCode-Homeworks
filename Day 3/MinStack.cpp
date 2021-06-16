@@ -3,25 +3,19 @@ class MinStack {
     stack<int> s;
     stack<int> min;
 public:
-    /** initialize your data structure here. */
-    MinStack() {
-      
-    }
-    
     void push(int val) {
         if(s.empty()){
             s.push(val);
             min.push(val);
         }
         else{
-        if(val <= min.top()){
-            min.push(val);
-            s.push(val);
-        }
-
-        else{
-            s.push(val);
-        }
+            if(val <= min.top()){
+                min.push(val);
+                s.push(val);
+            }
+            else{
+                s.push(val);
+            }
         }
     }
     
@@ -31,7 +25,6 @@ public:
             s.pop();
             min.pop();
         }
-        
         else{
             s.pop();
         }
