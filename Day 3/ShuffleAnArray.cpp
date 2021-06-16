@@ -1,4 +1,5 @@
 #include <ctime>
+
 class Solution {
 private:
     vector<int> nums;
@@ -9,20 +10,15 @@ public:
           this->nums.push_back(nums[i]);
           m.insert({i,nums[i]});
       }
-        
     }
-    
     
     /** Resets the array to its original configuration and return it. */
     vector<int> reset() {
-    
         int i=0;
         while(i<nums.size()){
-           
             nums[i]= m[i];
             ++i;
         }
-        
         return nums;
     }
     
@@ -33,7 +29,6 @@ public:
                int r = rand()%nums.size();
                 std::swap(nums[i],nums[r]);
             }
-        
         return nums;
     }
 };
