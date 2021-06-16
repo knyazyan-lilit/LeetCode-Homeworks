@@ -19,12 +19,9 @@ int sum_of_square(unsigned int num){
     return sum; 
 }
 
-
 int main(){
-
     int res = 0;
     res = sum_of_square(100) - square_of_sum(100);
     std::cout<<res;
     return 0;  
-
 }
