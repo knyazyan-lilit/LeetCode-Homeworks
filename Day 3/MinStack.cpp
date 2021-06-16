@@ -1,5 +1,4 @@
 class MinStack {
-    
     stack<int> s;
     stack<int> min;
 public:
