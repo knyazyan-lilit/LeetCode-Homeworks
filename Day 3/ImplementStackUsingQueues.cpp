@@ -2,11 +2,6 @@ class MyStack {
     queue<int> q1;
     queue<int> q2;
 public:
-    /** Initialize your data structure here. */
-    MyStack() {
-        
-    }
-    
     /** Push element x onto stack. */
     void push(int x) {
         if(q2.empty()){
@@ -16,7 +11,6 @@ public:
     
     /** Removes the element on top of the stack and returns that element. */
     int pop() {
-       
         while(q1.size()!=1){
             q2.push(q1.front());
             q1.pop();
