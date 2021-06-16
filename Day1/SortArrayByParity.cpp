@@ -7,11 +7,11 @@ public:
             if(A[i]%2==0){
                 ++i;
             }
-        else{
-            std::swap(A[i],A[j]);
-            --j;
+            else{
+                std::swap(A[i],A[j]);
+                --j;
+            }
         }
-    }
         return A;
     }
 };
