@@ -6,9 +6,6 @@ public:
                 int i=0;
                 while(i+1<strs.size()){
                     if(strs[i][j]>strs[i+1][j]){
-                        
-                    //strs.erase(strs.begin()+i);
-                        
                     ++deleted;
                     break;
                     }
