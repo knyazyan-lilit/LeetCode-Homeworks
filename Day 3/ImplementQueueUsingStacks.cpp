@@ -7,7 +7,6 @@ public:
     MyQueue() {
         
     }
-    
     /** Push element x to the back of queue. */
     void push(int x) {
         if(s2.empty()){
@@ -20,7 +19,6 @@ public:
             }
             s1.push(x);
         }
-        
     }
     
     /** Removes the element from in front of queue and returns that element. */
@@ -38,7 +36,6 @@ public:
             tmp=s2.top();
             s2.pop();
         }
-        
         return tmp;
     }
     
@@ -49,12 +46,9 @@ public:
                 s2.push(s1.top());
                 s1.pop();
             }
-           
         }
          return s2.top();
-       
     }
-    
     /** Returns whether the queue is empty. */
     bool empty() {
         return s1.empty() && s2.empty();
