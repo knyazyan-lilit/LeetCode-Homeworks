@@ -8,14 +8,11 @@ public:
             s.insert(nums[i]);
             ++i;
         }
-        
          set<int >::iterator itr;
          nums.clear();
          for(itr=s.begin();itr != s.end();++itr ){
              nums.push_back(*itr);
          }
-        
         return nums.size();
-     
     }
 };
