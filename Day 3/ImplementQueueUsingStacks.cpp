@@ -16,7 +16,6 @@ public:
             s1.push(x);
         }
     }
-    
     /** Removes the element from in front of queue and returns that element. */
     int pop() {
         int tmp;
