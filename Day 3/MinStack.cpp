@@ -27,7 +27,6 @@ public:
         else{
             s.pop();
         }
-        
     }
     
     int top() {
