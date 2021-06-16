@@ -5,7 +5,6 @@ public:
         int j = 0;
         vector<int> nums3;
         nums3.reserve(n+m);
-        
         while(i < m && j < n){
             if(nums1[i] <= nums2[j]){
                 nums3.push_back(nums1[i]); 
@@ -15,23 +14,15 @@ public:
                 nums3.push_back(nums2[j]);
                 ++j;
             }
-           
         }       
-        
         while(i < m){
-        nums3.push_back(nums1[i]);
-        ++i;
-        
+            nums3.push_back(nums1[i]);
+            ++i;
         }
-
         while(j < n){
-        nums3.push_back(nums2[j]);
-        ++j;
-        
+            nums3.push_back(nums2[j]);
+            ++j;
         }
-        
         nums1=nums3;
-        
-        
     }
 };
