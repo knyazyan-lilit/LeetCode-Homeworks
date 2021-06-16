@@ -1,9 +1,5 @@
-//slow, but is working
-
-
 class Solution {
 public:
-  
     int strStr(string haystack, string needle) {
         if( needle==""){
             return 0;
@@ -20,18 +16,14 @@ public:
              while(j<size){
                  if(haystack[i]==needle[j])
                  {
-
                      ++equals;
                      ++j;
                      ++i;
                      if(equals==size){
                          return i-size;
                      }
-
                  }
                  else{break;}
-
-
              }
 
               j=0;
@@ -39,5 +31,4 @@ public:
          }
             return -1;
     }
-    
 };
