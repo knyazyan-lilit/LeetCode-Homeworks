@@ -4,7 +4,6 @@
 using namespace std;
 struct AddressBook
 {
-
     string name;
     string address;
     string phone;
