@@ -9,8 +9,6 @@ private:
     int age;
     std::string id;
 public:
-  
-    
     //setters
     void set_name(std::string n){
         name = n;
@@ -53,9 +51,6 @@ void save_in_vec(std::vector<Person>&v,std::fstream &file){
         file>>name;
         p.set_name(name);
         }
-        
-      
-
         file>>age;
         if(age=="---"){
             p.set_age(0);
@@ -65,8 +60,6 @@ void save_in_vec(std::vector<Person>&v,std::fstream &file){
         file>>age;
         p.set_age(atoi(age.c_str()));
         }
-
-
         file>>id;
         if(id=="---"){
             p.set_id(id);
@@ -78,10 +71,7 @@ void save_in_vec(std::vector<Person>&v,std::fstream &file){
         }
         
         v.push_back(p);
-       
     }
-        
-    
 }
 
 int main(){
