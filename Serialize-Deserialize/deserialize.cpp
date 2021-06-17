@@ -19,12 +19,10 @@ public:
     void set_id(std::string i){
         id = i;
     }
-
     //getters
     std::string get_name(){
         return name;
     }
-
     int get_age(){
         return age;
     }
@@ -34,13 +32,11 @@ public:
 };
 
 void save_in_vec(std::vector<Person>&v,std::fstream &file){
-     
     std::string name;
     std::string age;
     std::string id;
    int i=0;
     while(!file.eof()){
-      
         Person p;
         file>>name;
         if(name=="---"){
@@ -69,13 +65,11 @@ void save_in_vec(std::vector<Person>&v,std::fstream &file){
             file>>id;
             p.set_id(id);
         }
-        
         v.push_back(p);
     }
 }
 
 int main(){
-    
     std::fstream file;
     file.open("./f.txt");
     std::vector<Person> v;
