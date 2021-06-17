@@ -11,7 +11,6 @@ class FwdList
 private:
     Node<T>* head;
     size_t size;
-
 public:
     FwdList();
     void insert(int pos, T elem);
@@ -25,5 +24,4 @@ public:
     bool is_empty();
     size_t get_size();
 };
-
 
