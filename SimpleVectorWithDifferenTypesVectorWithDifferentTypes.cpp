@@ -9,6 +9,7 @@ enum TypeName
     FLOAT,
     STRING,
 };
+
 struct Type
 {
     void *value;
