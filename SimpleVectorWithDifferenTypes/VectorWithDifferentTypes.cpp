@@ -21,7 +21,6 @@ private:
     int size;
     int capacity = 1;
     Type *buffer = new Type[capacity];
-
 public:
     Vector()
     {
@@ -77,7 +76,7 @@ public:
                 std::cout << *(string *)(buffer[i].value) << ",";
             }
         }
-        cout << "]";
+        std::cout << "]";
     }
 };
 
