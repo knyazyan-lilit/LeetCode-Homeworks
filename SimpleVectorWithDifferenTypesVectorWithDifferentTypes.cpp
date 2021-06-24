@@ -29,7 +29,6 @@ public:
         size = 0;
         capacity = 1;
     }
-
     void push(Type elem)
     {
         if (size == capacity)
@@ -109,4 +108,6 @@ int main()
     obj.print();
     obj.pop();
     obj.print();
+    
+    return 0;
 }
