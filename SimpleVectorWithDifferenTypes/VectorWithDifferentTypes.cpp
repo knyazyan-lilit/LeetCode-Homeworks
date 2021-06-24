@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 enum TypeName
 {
@@ -54,28 +53,28 @@ public:
 
     void print()
     {
-        cout << "[ ";
+        std::cout << "[ ";
         for (int i = 0; i < size; i++)
         {
             if (buffer[i].typ == INT)
             {
-                cout << *(int *)(buffer[i].value) << ",";
+                std::cout << *(int *)(buffer[i].value) << ",";
             }
             else if (buffer[i].typ == CHAR)
             {
-                cout << *(char *)(buffer[i].value) << ",";
+                std::cout << *(char *)(buffer[i].value) << ",";
             }
             else if (buffer[i].typ == DOUBLE)
             {
-                cout << *(double *)(buffer[i].value) << ",";
+                std::cout << *(double *)(buffer[i].value) << ",";
             }
             else if (buffer[i].typ == FLOAT)
             {
-                cout << *(float *)(buffer[i].value) << ",";
+                std::cout << *(float *)(buffer[i].value) << ",";
             }
             if (buffer[i].typ == STRING)
             {
-                cout << *(string *)(buffer[i].value) << ",";
+                std::cout << *(string *)(buffer[i].value) << ",";
             }
         }
         cout << "]";
